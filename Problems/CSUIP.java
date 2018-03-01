@@ -31,7 +31,7 @@ public class CSUIP {
 			while (currLine != null) {
 				
 				// Write in new file
-				if(!isDouble(currLine)) {
+				if(!isDouble(currLine) && currLine.length()==8) {
 					if(!prevLine.equals(currLine)) { // for first time only
 						bw.write(prevLine);
 						bw.newLine();
